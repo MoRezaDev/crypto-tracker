@@ -172,6 +172,9 @@
     width: 60px;
     height: 60px;
   }
+  .loginContainer {
+    margin-top: -200px;
+  }
 }
 
 @media (max-width: 370px) {
