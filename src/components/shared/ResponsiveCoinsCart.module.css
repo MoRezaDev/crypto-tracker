@@ -52,6 +52,7 @@
   border-top: 1px solid rgba(192, 192, 192, 0.522);
   padding: 5px 0;
   overflow: auto;
+  min-height: 32.6px;
 }
 
 .cryptoContentFirst::-webkit-scrollbar {
