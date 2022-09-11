@@ -1,0 +1,105 @@
+.coinCartContainer {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.775);
+}
+
+.coinCartContainer > a {
+  text-decoration: none;
+}
+
+.coinCartContainer > span:nth-child(1) {
+  width: 80px;
+}
+
+.coinImageNameSymbol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 350px;
+}
+
+.coinImageNameSymbol > span:nth-child(2) {
+  font-weight: bold;
+  color: rgb(43, 40, 40);
+}
+
+.coinImageNameSymbol > span:nth-child(3) {
+  color: gray;
+}
+
+.coinImageNameSymbol img {
+  width: 25px;
+  height: 25px;
+}
+
+.coinCartContainer > span:nth-child(3) {
+  width: 130px;
+}
+
+.coinCartContainer > span:nth-child(4),
+.coinCartContainer > span:nth-child(5) {
+  width: 80px;
+}
+
+.coinCartContainer > span:nth-child(6) {
+  width: 100px;
+}
+
+.coinCartContainer > span:nth-child(7) {
+  width: 180px;
+}
+
+@media (max-width: 1385px) {
+  .coinImageNameSymbol {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .coinCartContainer > span:nth-child(4),
+  .coinCartContainer > span:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .coinCartContainer > span:nth-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .coinCartContainer > span:nth-child(1) {
+    width: 50px;
+  }
+
+  .coinImageNameSymbol {
+    width: 130px;
+  }
+  .coinImageNameSymbol > span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .coinCartContainer > span:nth-child(4),
+  .coinCartContainer > span:nth-child(5),
+  .coinCartContainer > span:nth-child(6),
+  .coinCartContainer > span:nth-child(7),
+  .coinCartContainer > span:nth-child(8) {
+    display: none;
+  }
+  .coinCartContainer > span:nth-child(1) {
+    min-width: 40px;
+    width: 40px;
+  }
+  .coinImageNameSymbol {
+    width: 130px;
+    min-width: 130px;
+  }
+  .coinCartContainer > span:nth-child(3) {
+    width: 100px;
+    min-width: 100px;
+  }
+}

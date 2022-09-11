@@ -1,0 +1,124 @@
+.responsiveMarketContainer {
+  width: 100%;
+  display: none;
+}
+
+.responsiveLeftContainer {
+  min-width: 355px;
+  display: flex;
+  flex-direction: column;
+}
+.responsiveLeftContainer > div {
+  display: flex;
+  border-bottom: 1px solid silver;
+  padding: 10px 0;
+}
+
+.responsiveLeftContainer > div > h5:nth-child(1) {
+  min-width: 50px;
+}
+
+.responsiveLeftContainer > div > h5:nth-child(2) {
+  min-width: 200px;
+}
+
+.responsiveLeftContainer > div > h5:nth-child(3) {
+  min-width: 100px;
+}
+
+.marketsDetailsContainer {
+  max-height: 51px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.323);
+}
+
+.marketsDetailsContainer > div:nth-child(1) {
+  min-width: 50px;
+}
+
+.marketsDetailsContainer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+}
+.marketsDetailsContainer > div:nth-child(2) img {
+  width: 30px;
+  height: 30px;
+}
+
+.marketsDetailsContainer > div:nth-child(3) {
+  min-width: 100px;
+}
+
+.responsiveRightContainer {
+  min-width: 730px;
+  border-bottom: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+}
+
+.responsiveRightContainer > div {
+  display: flex;
+  border-bottom: 1px solid silver;
+  padding: 10px 0;
+}
+
+.responsiveRightContainer > div > h5:nth-child(1) {
+  min-width: 130px;
+}
+
+.responsiveRightContainer > div > h5:nth-child(2) {
+  min-width: 100px;
+}
+
+.responsiveRightContainer > div > h5:nth-child(3),
+.responsiveRightContainer > div > h5:nth-child(4) {
+  min-width: 120px;
+}
+
+.responsiveRightContainer > div > h5:nth-child(5) {
+  min-width: 150px;
+}
+
+.responsiveRightContainer > div > h5:nth-child(6) {
+  min-width: 100px;
+}
+
+.marketsDetailsContainer2 {
+  height: 51px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.323);
+}
+
+.marketsDetailsContainer2 > div:nth-child(1) {
+  min-width: 130px;
+}
+
+.marketsDetailsContainer2 > div:nth-child(2) {
+  min-width: 100px;
+}
+
+.marketsDetailsContainer2 > div:nth-child(3),
+.marketsDetailsContainer2 > div:nth-child(4) {
+  min-width: 120px;
+}
+
+.marketsDetailsContainer2 > div:nth-child(5) {
+  min-width: 150px;
+}
+
+.marketsDetailsContainer2 > div:nth-child(6) {
+  min-width: 100px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .responsiveMarketContainer {
+    display: flex;
+  }
+}

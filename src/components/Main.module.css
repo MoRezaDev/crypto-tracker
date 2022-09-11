@@ -1,0 +1,115 @@
+.mainContainer {
+  width: 100%;
+  overflow: hidden;
+  transition: all 250ms linear;
+  z-index: -1;
+}
+
+.mainDark {
+  background: linear-gradient(to right, #6441a5, #2a0845);
+  overflow: hidden;
+  transition: all 250ms linear;
+}
+
+.mainContents {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.mainSearch {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mainSearch input {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cryptoListTitle {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.522);
+  border-top: 1px solid rgba(192, 192, 192, 0.522);
+}
+
+.cryptoListTitle > h5:nth-child(1) {
+  width: 80px;
+  min-width: 40px;
+}
+
+.cryptoListTitle > h5:nth-child(2) {
+  margin-left: 3px;
+  width: 350px;
+  min-width: 130px;
+}
+
+.cryptoListTitle > h5:nth-child(3) {
+  width: 140px;
+  min-width: 100px;
+}
+
+.cryptoListTitle > h5:nth-child(4),
+.cryptoListTitle > h5:nth-child(5) {
+  width: 80px;
+}
+
+.cryptoListTitle > h5:nth-child(6),
+.cryptoListTitle > h5:nth-child(7) {
+  margin-right: 100px;
+}
+
+@media (max-width: 1385px) {
+  .cryptoListTitle > h5:nth-child(2) {
+    margin-left: 3px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mainContents {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .cryptoListTitle > h5:nth-child(4),
+  .cryptoListTitle > h5:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .cryptoListTitle > h5:nth-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .cryptoListTitle > h5:nth-child(1) {
+    width: 50px;
+  }
+
+  .cryptoListTitle > h5:nth-child(2) {
+    width: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContents {
+    display: none;
+  }
+
+  .mainSearch {
+    position: relative;
+    left: 10px;
+  }
+}

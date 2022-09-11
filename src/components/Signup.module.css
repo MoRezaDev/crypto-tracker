@@ -1,0 +1,163 @@
+.signupContainerModal {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkContainer {
+  background: linear-gradient(to right, #6441a5, #2a0845);
+}
+
+.signupContainer {
+  width: 450px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  animation: tt 300ms linear;
+}
+
+@keyframes tt {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.signupLeftContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 140px;
+  background-color: green;
+}
+
+.signupLeftContainer img {
+  width: 80px;
+  height: 80px;
+}
+
+.signupRightContainer {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.signUpTitleContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.signUpTitleContainer > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: gray;
+  padding: 2px 15px;
+  border-radius: 10px;
+}
+
+.inputForm {
+  margin: 10px 0;
+  width: 250px;
+  border-bottom: 1px solid silver;
+  text-align: start;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.visibleIconContainer {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+}
+.inputForm span {
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  top: 42px;
+}
+
+.inputForm input {
+  outline: none;
+  border: none;
+  width: 200px;
+}
+
+.inputForm input::placeholder {
+  transition: all 250ms linear;
+}
+
+.inputForm input:focus::placeholder {
+  opacity: 0;
+}
+
+.signupRightContainer button {
+  margin-top: 5px;
+  padding: 8px 20px;
+  background-color: transparent;
+  border: 1px solid silver;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.signupRightContainer button:hover {
+  color: gray;
+}
+
+.titleContainer {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.titleContainer a {
+  text-decoration: none;
+  color: blue;
+}
+
+.animatedSpan {
+  animation: animatedSpan 300ms ease-in-out;
+}
+@keyframes animatedSpan {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animatedVisible {
+  animation: visiblee 300ms linear;
+}
+@keyframes visiblee {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .signupContainer {
+    width: 95%;
+  }
+}

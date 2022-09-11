@@ -1,0 +1,273 @@
+.coinContainer {
+  padding-top: 100px;
+  width: 100%;
+  animation: tr 300ms linear;
+}
+@keyframes tr {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.darkContainer {
+  background: linear-gradient(to right, #6441a5, #2a0845);
+}
+
+.lightFontColor {
+  color: rgba(238, 238, 238, 0.588) !important;
+}
+
+.LoadingContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoadingContainer > div {
+  width: 50%;
+  height: 50%;
+}
+
+.LoadingContainer > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+.coinContentContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coinContentLeft {
+  width: 60%;
+}
+
+.coinContentLeft > span:nth-child(1) {
+  font-size: 20px;
+  background: linear-gradient(to top, #000000, #434343);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.coinImageNameSymbol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.coinImageNameSymbol > span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.priceTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.priceTitle > h1 {
+  font-size: 2.7rem;
+}
+
+.priceTitle > h2 {
+  font-size: 1.8rem;
+}
+
+.communityContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.communityContainer > span > span {
+  font-weight: bold;
+}
+
+.coinContentRight {
+  width: 40%;
+}
+
+.lineSeperator {
+  margin: 5px 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(192, 192, 192, 0.699);
+  margin-bottom: 10px;
+}
+
+.contentRightItems {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.contentRightItems > span:first-child {
+  color: gray;
+}
+
+.contentRightItems > div {
+  display: flex;
+  gap: 10px;
+}
+
+.contentRightItems > div > a,
+.contentRightItems > a {
+  background-color: #eee;
+  padding: 6px 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #434343;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.coinContentContainerMktCapDetails {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.coinDetailMktCap {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conDetailItems {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(184, 175, 175, 0.352);
+  padding: 20px 0;
+}
+
+.conDetailItems > span:first-child {
+  color: gray;
+}
+
+.conDetailItems > span:last-child {
+  font-weight: bold;
+  color: #434343;
+}
+
+.chartMarketsTitleContainer {
+  width: 80%;
+  margin: 60px auto;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.197);
+}
+
+.animatedTitle {
+  animation: title 500ms linear;
+}
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.titleItem {
+  padding: 0 0 20px 0;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+
+.chartContainer {
+  width: 80%;
+  margin: 20px auto;
+}
+
+@media (max-width: 1250px) {
+  .coinContentLeft {
+    width: auto;
+  }
+  .coinContentRight {
+    width: 60%;
+  }
+
+  .coinContentContainer {
+    justify-content: start;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .coinContentContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .chartContainer {
+    width: 95%;
+    overflow: auto;
+  }
+
+  .coinContentRight {
+    width: 410px;
+  }
+}
+
+@media (max-width: 830px) {
+  .coinContentContainerMktCapDetails {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .conDetailItems {
+    width: 410px;
+  }
+
+  .coinMargin {
+    border-top: 1px solid silver;
+  }
+}
+
+@media (max-width: 500px) {
+  .coinContentContainerMktCapDetails {
+    width: 95%;
+  }
+  .coinContentContainer {
+    width: 95%;
+  }
+  .coinContentLeft {
+    width: 100%;
+  }
+
+  .coinContentRight {
+    width: 100%;
+  }
+
+  .coinDetailMktCap {
+    width: 100%;
+  }
+
+  .conDetailItems {
+    width: 100%;
+  }
+}

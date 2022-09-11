@@ -1,0 +1,140 @@
+.responsiveMainContainer {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  gap: 50px;
+}
+
+.mainSearch {
+  text-align: center;
+}
+
+.mainSearch input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  outline: none;
+}
+
+.cryptoTitleContainer {
+  display: flex;
+}
+
+.cryptoListTitle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.522);
+}
+
+.cryptoTitle {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.cryptoTitle h5 {
+  font-size: 12px;
+}
+
+.cryptoTitle h5:first-child {
+  min-width: 50px;
+}
+
+.cryptoContentFirst > a {
+  text-decoration: none;
+}
+
+.cryptoContentFirst {
+  display: flex;
+  border-top: 1px solid rgba(192, 192, 192, 0.522);
+  padding: 5px 0;
+  overflow: auto;
+}
+
+.cryptoContentFirst::-webkit-scrollbar {
+  display: none;
+}
+
+.cryptoContentFirst > span:nth-child(1) {
+  min-width: 50px;
+  width: 50px;
+}
+
+.coinImageNameSymbol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  min-width: 150px;
+}
+
+.coinImageNameSymbol > span:nth-child(2) {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(43, 40, 40);
+}
+
+.coinImageNameSymbol img {
+  width: 20px;
+  height: 20px;
+}
+
+.cryptoContentSecond {
+  min-height: 32.6px;
+  min-width: 100%;
+  display: flex;
+  padding: 5px 0;
+  /* border-bottom: 1px solid rgba(192, 192, 192, 0.522); */
+  border-top: 1px solid rgba(192, 192, 192, 0.522);
+  /* border-top: 1px solid rgb(255, 255, 255); */
+}
+
+#cryptoSecondTitle {
+  overflow: auto;
+}
+
+.cryptoTitle2 > h5:nth-child(1) {
+  min-width: 90px;
+}
+
+.cryptoTitle2 > h5:nth-child(2),
+.cryptoTitle2 > h5:nth-child(3),
+.cryptoTitle2 > h5:nth-child(4) {
+  min-width: 60px;
+  margin-left: 4px;
+}
+
+.cryptoTitle2 > h5:nth-child(5),
+.cryptoTitle2 > h5:nth-child(6) {
+  min-width: 120px;
+}
+
+.cryptoContentSecond span {
+  font-size: 12px;
+}
+
+.cryptoContentSecond span:nth-child(1) {
+  min-width: 90px;
+}
+
+.cryptoContentSecond span:nth-child(2),
+.cryptoContentSecond span:nth-child(3),
+.cryptoContentSecond span:nth-child(4) {
+  min-width: 60px;
+}
+.cryptoContentSecond span:nth-child(5),
+.cryptoContentSecond span:nth-child(6) {
+  min-width: 120px;
+}
+
+@media (max-width: 600px) {
+  .responsiveMainContainer {
+    display: flex;
+  }
+  .mainSearch {
+    margin-top: 15px;
+  }
+}

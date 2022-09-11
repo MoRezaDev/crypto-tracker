@@ -1,0 +1,117 @@
+.marketTitleContainer {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.522);
+  border-top: 1px solid rgba(192, 192, 192, 0.522);
+}
+
+.marketTitleContainer > h5:nth-child(1) {
+  width: 60px;
+}
+
+.marketTitleContainer > h5:nth-child(2) {
+  width: 250px;
+}
+
+.marketTitleContainer > h5:nth-child(3) {
+  width: 150px;
+}
+
+.marketTitleContainer > h5:nth-child(4) {
+  width: 130px;
+}
+
+.marketTitleContainer > h5:nth-child(5) {
+  width: 100px;
+}
+
+.marketTitleContainer > h5:nth-child(6),
+.marketTitleContainer > h5:nth-child(7) {
+  width: 120px;
+}
+
+.marketTitleContainer > h5:nth-child(8) {
+  width: 150px;
+}
+
+.marketTitleContainer > h5:nth-child(9) {
+  width: 100px;
+}
+
+.marketsDetailsContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.323);
+}
+
+.marketsDetailsContainer > div:nth-child(1) {
+  width: 60px;
+}
+
+.marketsDetailsContainer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+}
+.marketsDetailsContainer > div:nth-child(2) img {
+  width: 30px;
+  height: 30px;
+}
+
+.marketsDetailsContainer > div:nth-child(3) {
+  width: 150px;
+  overflow: auto;
+}
+
+.marketsDetailsContainer > div:nth-child(3)::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.marketsDetailsContainer > div:nth-child(3)::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.marketsDetailsContainer > div:nth-child(3)::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.marketsDetailsContainer > div:nth-child(4) {
+  width: 130px;
+}
+
+.marketsDetailsContainer > div:nth-child(5) {
+  width: 100px;
+}
+
+.marketsDetailsContainer > div:nth-child(6),
+.marketsDetailsContainer > div:nth-child(7) {
+  width: 120px;
+}
+
+.marketsDetailsContainer > div:nth-child(8) {
+  width: 150px;
+}
+
+.marketsDetailsContainer > div:nth-child(9) {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.marketsDetailsContainer > div:nth-child(9) > div {
+  margin-right: 30px;
+}
+
+@media (max-width: 1200px) {
+  .marketTitleContainer {
+    display: none;
+  }
+  .marketsDetailsContainer {
+    display: none;
+  }
+}
